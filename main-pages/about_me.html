@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>About Me</title>
+    <head>
+      <link rel="stylesheet" href="../css/mystyle_aboutme.css">
+      <!-- <link rel="stylesheet" href="css/mystyle_home.css"> -->
+    </head> 
+  <body>
+    <header id="logo">
+      <img src="../sources/logo.png"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a  href="../home.html">Home</a></li>
+        <li class="active"><a href="about_me.html">About us</a></li>
+        <li><a href="our_menu.html">Our Menu</a></li>
+        <li><a href="specials.html">Our Specials</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  <div class="main">
+      <section class="content">
+        <div id="form-main">
+            <div id="form-div">
+              <h1> Welcome to Daisy's Bakery</h1>
+      
+              <p>Hello there, everything began with my enthusiasm for cooking when I was a young lady. I have delighted in cooking and preparing for my family since I was 8 years of age. <br> 
+
+              I started my working career as a secretary and an office director in Brisbane. However, I generally had my brain on cooking. Cooking for my husband, cooking for my family. Then I started taking cooking classes at night. <br> 
+
+              Before I moved to the Townsville to rejoin with my family, with my husband's help, I went to Switzerland to seek after Hotel Management at Les Roches, and was granted a Diploma in Swiss Hotel Management in 1993. In addition to my studies in Switzerland, I trained expertly at the world popular Le Cordon Bleu in Paris, where I got a recognition spent significant time in French Cuisine and Pastries.<br> 
+
+              With the encounters at these five-star inns, I built up a range of skills to make cakes with exquisite taste that have turned into the establishment for Daisy's Tropical Treats Bakery. 
+              Some of my current customers are James Cook University, the Cowboys and Telstra. </p>
+            </div>
+        </div>
+      </section>
+      <section class="sidebar" >
+        <form name="signup" action="../php/message.php" method="post">
+            <h2>Sign up for the Tropical Treats Weekly newsletter.</h2>
+            <hr>
+            <label for="fname"><b>Name</b></label>
+            <input type="text" placeholder="enter your name" name="name" required> <br>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="enter your email" name="email" required><br>
+            <label for="product"><b>Product</b></label><br>
+            <select name="product">
+              <option value="0">Select product:</option>
+              <option value="1">Caramel</option>
+              <option value="2">Chocolate chip</option>
+              <option value="3">Bluberry Muffin</option>
+              <option value="4">Lemon Meringue</option>
+            </select>
+            <label for="email"><b>Birthday</b></label>
+            <input type="date" placeholder="enter your birthday" name="birthday" required><br>
+            <p><input type="checkbox" name="checkbox" required id="checkbox">Approval to be added to the Tropical Treats email list.  <a href="terms.html">Read Terms and conditions</a></p>
+            <div><button name="signup" type="submit" class="signupbtn" onclick="validateForm();">Sign Up Here</button></div>
+        </form>
+      </section>
+    </div>   
+  <footer>
+      <div class="footer-grid">
+        <div class="footer-col"><div class="column">
+              <div id="details">
+                 <h2>Our Specials</h2>
+                <hr>
+                <p>Caramel</p>
+                <p>Chocolate chip Muffin</p>
+                <p>Bluberry Muffin</p>
+                <p>Lemon Meringue pie</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div id="details">
+              <h2>Our Address</h2><hr>
+                <p>Address: 123 Prize Lane<br>Kirwan, QLD <br> Ph: 0433333333 <br> For Catering: 0455555555 </p>
+            </div>
+          </div>
+         <div class="footer-col">
+           <div id="details">
+              <h2>Hot links</h2><hr>
+              <a href="../home.html">Home</a><br>
+              <a href="our_menu.html">Our Menu</a><br>
+              <a href="about_me.html">About us</a><br>
+              <a href="specials.html">Our Special</a><br>
+              <a href="contact.html">Contact us</a><br>
+            </div>
+         </div>
+     </div>
+    </footer>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>

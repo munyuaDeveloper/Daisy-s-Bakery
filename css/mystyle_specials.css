@@ -1,0 +1,209 @@
+
+body {
+    background-image: url("../sources/cheap%20tuesday.jpg");
+    background-size: cover;
+      width:100%;
+    padding: 0;
+    margin: 0;
+}
+h1{
+  color: yellow; 
+  font-size: 30px;
+}
+ul {
+
+  list-style-type: none;
+  margin: 1;
+  padding: 1;
+  overflow: auto;
+  background-color: black;
+}
+
+li {
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+}
+li.active{
+  background-color: coral !important;
+}
+li a {
+  display: block;
+  color: lightcyan;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: coral;
+}
+.main{
+  margin-bottom: 700px;
+}
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+.centerspecials {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+#special h1{
+  text-align: center;
+}
+#special p{
+  color: white;
+  font-size: 18px;
+  text-align: right;
+}
+footer {
+   width: 100%;
+   background: black;
+   color: white;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 5px 0px;
+
+
+  }
+a {
+    color: white
+}
+.footer-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+  grid-template-rows: repeat(1,auto);
+  grid-gap:5px 5px;
+  text-align: justify;
+    color: white; 
+    font-size: 18px;
+}
+
+.footer-col{
+  padding:10px 50px;
+}
+
+/*====media queries====*/
+@media screen and (max-width: 991px){
+  #logo{
+    width: 100%;
+  }
+  #logo img{
+    width: 100%;
+  }
+  nav{
+    font-size: 14px;
+  }
+  nav ul li a{
+    padding: 18px 14px;
+  }
+  .content{
+    width: 100%;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+   .footer-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(1,100%);
+  grid-template-rows: repeat(1,auto);
+  grid-gap:5px 5px;
+  text-align: justify;
+    color: white; 
+    font-size: 18px;
+}
+
+.footer-col{
+  padding:5px;
+}
+}
+@media screen and(max-width: 768px){
+  #logo{
+    width: 100%;
+  }
+  #logo img{
+    width: 100%;
+  }
+  nav{
+    font-size: 14px;
+  }
+  nav ul li a{
+    padding: 18px 14px;
+  }
+   .content{
+    width: 100%;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+   .footer-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(1,100%);
+  grid-template-rows: repeat(1,auto);
+  grid-gap:5px 5px;
+  text-align: justify;
+    color: white; 
+    font-size: 18px;
+}
+
+.footer-col{
+  padding:5px;
+}
+}
+@media screen and (max-width: 568px){
+  #logo{
+    width: 100%;
+  }
+  #logo img{
+    width: 100%;
+  }
+ nav{
+    font-size: 12px;
+  }
+  nav ul li a{
+    padding: 14px 10px;
+  }
+   .content{
+    width: 100%;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(1,100%);
+  grid-template-rows: repeat(1,auto);
+  grid-gap:5px 5px;
+  text-align: justify;
+    color: white; 
+    font-size: 18px;
+}
+
+.footer-col{
+  padding:5px;
+}
+}

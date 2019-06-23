@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <title>Menu</title>
+  <head>
+    <link rel="stylesheet" href="../css/mystyle_ourmenu.css">
+  </head>
+<body>    
+<header id="logo">
+<img src="../sources/logo.png"/>
+</header>
+<nav>
+    <ul>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="about_me.html">About us</a></li>
+      <li class="active"><a href="our_menu.html">Our Menu</a></li>
+      <li><a href="specials.html">Our Specials</a></li>
+      <li ><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>            
+<article class="main">
+  <section class="content">
+    <div class="grid" >
+      <div class="grid-item">
+        <div class="column">
+          <h3>Blueberry muffin (3.95)</h3>
+          <a href="../products-pages/blueberry.html"> <img src="../sources/1.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        </div>
+      </div>
+       <div class="grid-item">
+        <div class="column">
+        <h3>Caramel slice ($4.50)</h3>
+        <a href="../products-pages/caramel.html"><img src="../sources/2.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="column">
+        <h3>Chocolate chip muffin ($3.95)</h3>
+        <a href="../products-pages/chocochip.html"><img src="../sources/3.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        </div>
+      </div>
+       <div class="grid-item">
+        <div class="column">
+        <h3>Cherry Ripe slice ($4.50)</h3>
+        <a href="../products-pages/cherryripe.html"><img src="../sources/4.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        
+        </div>
+      </div>
+       <div class="grid-item">
+        <div class="column">
+        <h3>Lemon meringue pie ($5.50)</h3>
+        <a href="../products-pages/lemon.html"><img src="../sources/5.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        
+        </div>
+      </div>
+       <div class="grid-item"><div class="column">
+        <h3>Raspberry cheesecake ($5.50)</h3>
+        <a href="../products-pages/raspberry.html"><img src="../sources/6.jpg" class="img img-thumbnail" width="250" height="250"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sidebar" >
+      <form name="signup" action="../php/message.php" method="post">
+            <h2>Sign up for the Tropical Treats Weekly newsletter.</h2>
+            <hr>
+            <label for="fname"><b>Name</b></label>
+            <input type="text" placeholder="enter your name" name="name" required> <br>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="enter your email" name="email" required><br>
+             <label for="product"><b>Product</b></label><br>
+            <select name="product">
+              <option value="0">Select product:</option>
+              <option value="1">Caramel</option>
+              <option value="2">Chocolate chip</option>
+              <option value="3">Bluberry Muffin</option>
+              <option value="4">Lemon Meringue</option>
+            </select>
+            <label for="email"><b>Birthday</b></label>
+            <input type="date" placeholder="enter your birthday" name="birthday" required><br>
+            <div><button name="signup" type="submit" class="signupbtn" onclick="validateForm();">Sign Up Here</button></div>
+        </form>
+    </section>
+</article>
+        
+<footer>
+    <div class="footer-grid">
+      <div class="footer-col"><div class="column">
+            <div id="details">
+               <h2>Our Specials</h2>
+              <hr>
+              <p>Caramel</p>
+              <p>Chocolate chip Muffin</p>
+              <p>Bluberry Muffin</p>
+              <p>Lemon Meringue pie</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div id="details">
+            <h2>Our Address</h2><hr>
+              <p>Address: 123 Prize Lane<br>Kirwan, QLD <br> Ph: 0433333333 <br> For Catering: 0455555555 </p>
+          </div>
+        </div>
+       <div class="footer-col">
+         <div id="details">
+          <h2>Hot links</h2><hr>
+            <a href="../home.html">Home</a><br>
+         <a href="our_menu.html">Our Menu</a><br>
+        <a href="about_me.html">About us</a><br>
+        <a href="specials.html">Our Special</a><br>
+        <a href="contact.html">Contact us</a><br>
+          </div>
+       </div>
+   </div>
+  </footer>
+  <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

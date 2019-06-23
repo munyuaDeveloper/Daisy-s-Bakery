@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <title>Specials</title>
+    
+    <head>
+ 
+    </head>
+    <link rel="stylesheet" href="../css/mystyle_ourmenu.css">
+    <link rel="stylesheet" href="../css/mystyle_specials.css">
+    <body>
+        
+        <header id="logo">
+    <img src="../sources/logo.png"/>
+    </header>
+   <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="about_me.html">About us</a></li>
+        <li><a href="our_menu.html">Our Menu</a></li>
+        <li class="active"><a href="specials.html">Our Specials</a></li>
+        <li  ><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <article class="main">
+  <section class="content">
+   <div id="special">
+        <h1 >Our deals for our favorite customers</h1> 
+        <p> <img src = "../sources/specialdeals.jpg" class=centerspecials> 
+    </div>
+  </section>
+  <section class="sidebar" >
+      <form name="signup" action="../php/message.php" method="post">
+            <h1>Sign up to get this awesome discount NOW!!</h1>
+            <hr>
+            <label for="fname"><b>Name</b></label>
+            <input type="text" placeholder="enter your name" name="name" required> <br>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="enter your email" name="email" required><br>
+             <label for="product"><b>Product</b></label><br>
+            <select name="product">
+              <option value="0">Select product:</option>
+              <option value="1">Caramel</option>
+              <option value="2">Chocolate chip</option>
+              <option value="3">Bluberry Muffin</option>
+              <option value="4">Lemon Meringue</option>
+            </select>
+            <label for="email"><b>Birthday</b></label>
+            <input type="date" placeholder="enter your birthday" name="birthday" required><br>
+            <div><button name="signup" type="submit" class="signupbtn" onclick="validateForm();">Sign Up Here</button></div>
+        </form>
+    </section>
+</article> 
+
+     <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><div class="column">
+            <div id="details">
+              <h2>Our Specials</h2>
+              <hr>
+              <p>Caramel</p>
+              <p>Chocolate chip Muffin</p>
+              <p>Bluberry Muffin</p>
+              <p>Lemon Meringue pie</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div id="details">
+            <h2>Our Address</h2>
+            <hr>
+              <p>Address: 123 Prize Lane<br>Kirwan, QLD <br> Ph: 0433333333 <br> For Catering: 0455555555 </p>
+          </div>
+        </div>
+       <div class="footer-col">
+         <div id="details">
+          <h2>Hot links</h2>
+          <hr>
+        <a href="../home.html">Home</a><br>
+         <a href="our_menu.html">Our Menu</a><br>
+        <a href="about_me.html">About us</a><br>
+        <a href="specials.html">Our Special</a><br>
+        <a href="contact.html">Contact us</a><br>
+          </div>
+       </div>
+   </div>
+  </footer>
+</body>
+</html>
